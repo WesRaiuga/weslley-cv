@@ -1,0 +1,140 @@
+/* GERAL 
+----------------------------------------------------- */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: #282828;
+}
+h1, h2, h3{
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
+    color: #009966;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+/* BANNER
+----------------------------------------------------- */
+#banner{
+    background: url(../img/banner.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+#banner-content h3{
+    color: #f7f7f7;
+}
+#banner-content h1{
+    font-size: 30pt;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #52b3d9;
+    margin-top: 10px;
+}
+#banner-content h1 span{
+    color: #68c3a3;
+}
+#banner-content p{
+    font-size: 12pt;
+    color: #f7f7f7;
+    text-align: center;
+}
+#fiap{
+    color: #ed145b;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#fiap:hover{
+    text-decoration: underline;
+}
+#banner-content{
+    height: 100%;
+    background-color: rgba(26, 30, 35, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#redes-sociais{
+    margin-top: 40px;
+}
+#redes-sociais ul{
+    display: flex;
+}
+#redes-sociais ul li{
+    margin: 0 10px;
+}
+.social-icon{
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: scale(1,1);
+    transition: transform 0.5s;
+}
+.social-icon i{
+    color: #FFF;
+}
+#scroll{
+    position: absolute;
+    bottom: 20px;
+}
+#scroll a i{
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    font-size: 40pt;
+    color: #FFF;
+}
+
+/* SESSÃO
+----------------------------------------------------- */
+
+
+/* SESSÃO
+----------------------------------------------------- */
+
+
+/* SESSÃO
+----------------------------------------------------- */
+
+
+/* SESSÃO
+----------------------------------------------------- */
+
+
+/* SESSÃO
+----------------------------------------------------- */
+
+
+/* MEDIA QUERIES ( > 768px )
+----------------------------------------------------- */
+@media (min-width: 768px) {
+    #banner-content h1{
+        font-size: 40pt;
+        margin: 20px 0 30px;
+    }
+    .social-icon:hover{
+        background-color: rgba(82, 179, 217, 0.3);
+        transform: scale(1.5,1.5);
+    }
+}
