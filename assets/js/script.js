@@ -1,17 +1,20 @@
 /* MENU STICKY
 ----------------------------------------------------- */
-let menu = document.getElementById("menu");
+const menu = document.querySelector("#menu");
+const secao1 = document.querySelector("#sobre-mim");
 let sticky = menu.offsetTop;
 
-window.onscroll = () => {
-    fixarMenu()
-};
+window.addEventListener("scroll", () => {
+  fixarMenu();
+});
 
 const fixarMenu = () => {
-  if (window.pageYOffset > sticky) {
+  if (window.pageYOffset >= sticky) {
     menu.classList.add("sticky");
+    secao1.classList.add("desgrudar");
   } else {
     menu.classList.remove("sticky");
+    secao1.classList.remove("desgrudar");
   }
 };
 
@@ -25,5 +28,32 @@ menuHamburguer.onclick = () => {
   navMobile.classList.toggle('ativo');
 }
 
-/* EFEITO SMOOTH
+/* TABS DA SEÇÃO PROJETOS
 ----------------------------------------------------- */
+const tabLinks = document.querySelectorAll('.tab');
+const tabContents = document.querySelectorAll('.tab-content');
+
+tabLinks[0].onclick = () => {
+  showContent(0, 1, 2);
+  activeTab(0, 1, 2);
+};
+tabLinks[1].onclick = () => {
+  showContent(1, 0, 2);
+  activeTab(1, 0, 2);
+};
+tabLinks[2].onclick = () => {
+  showContent(2, 1, 0);
+  activeTab(2, 1, 0);
+};
+
+const showContent = (show, hide1, hide2) => {
+  tabContents[show].classList.add('active');
+  tabContents[hide1].classList.remove('active');
+  tabContents[hide2].classList.remove('active');
+};
+
+const activeTab = (active, inactive1, inactive2) => {
+  tabLinks[active].classList.add('active');
+  tabLinks[inactive1].classList.remove('active');
+  tabLinks[inactive2].classList.remove('active');
+};
