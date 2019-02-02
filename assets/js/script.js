@@ -1,3 +1,36 @@
+/* INTERNACIONALIZAÇÃO
+----------------------------------------------------- */
+let idioma = 'PT';
+const btnPt = document.querySelector('#btn-pt');
+const btnEn = document.querySelector('#btn-en');
+const ptAll = document.querySelectorAll('span[data-lang=PT]');
+const enAll = document.querySelectorAll('span[data-lang=EN]');
+
+const atualizaIdioma = (i) => {
+  if(i == 'PT'){
+    enAll.forEach(element => {
+      element.classList.add('hide');
+    });
+    ptAll.forEach(element => {
+      element.classList.remove('hide');
+    });
+  } else if (i == 'EN'){
+    ptAll.forEach(element => {
+      element.classList.add('hide');
+    });
+    enAll.forEach(element => {
+      element.classList.remove('hide');
+    });    
+  }
+};
+
+btnEn.onclick = () => {
+    atualizaIdioma('EN');
+};
+btnPt.onclick = () => {
+    atualizaIdioma('PT');
+};
+
 /* MENU STICKY
 ----------------------------------------------------- */
 const menu = document.querySelector("#menu");
