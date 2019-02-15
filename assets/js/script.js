@@ -1,20 +1,19 @@
 /* INTERNACIONALIZAÇÃO
 ----------------------------------------------------- */
-let idioma = 'PT';
 const btnPt = document.querySelector('#btn-pt');
 const btnEn = document.querySelector('#btn-en');
-const ptAll = document.querySelectorAll('span[data-lang=PT]');
-const enAll = document.querySelectorAll('span[data-lang=EN]');
+const ptAll = document.querySelectorAll('[data-lang=PT]');
+const enAll = document.querySelectorAll('[data-lang=EN]');
 
-const atualizaIdioma = (i) => {
-  if(i == 'PT'){
+const atualizaIdioma = (idioma) => {
+  if(idioma == 'PT'){
     enAll.forEach(element => {
       element.classList.add('hide');
     });
     ptAll.forEach(element => {
       element.classList.remove('hide');
     });
-  } else if (i == 'EN'){
+  } else if (idioma == 'EN'){
     ptAll.forEach(element => {
       element.classList.add('hide');
     });
