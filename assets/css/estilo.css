@@ -63,27 +63,23 @@ ul {
     padding: 0;
 }
 .secao {
-    padding-top: 60px;
-    margin: 0 0 50px;
-}
-.secao-title {
-    background: url(../img/keyboard.jpg) center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    padding-top: 30px;
+    margin: 0 0 30px;
 }
 .secao-title-content {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: rgba(26, 30, 35, 0.5);
+    background-color: rgba(26, 30, 35, 0.7);
     padding: 150px 0;
 }
 .secao-title-content h2 {
     color: #FFF;
-    font-size: 40pt;
+    font-size: 30pt;
     letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 0 0 10px #000;
 }
 .secao-content {
     padding: 20px 5vw;
@@ -94,6 +90,9 @@ ul {
 @media (min-width: 768px) {
     .secao {
         margin: 0 0 50px;
+    }
+    .secao-title-content h2 {
+        font-size: 50pt;
     }
 }
 
@@ -109,7 +108,7 @@ ul {
 
 #banner-content {
     height: 100%;
-    background-color: rgba(26, 30, 35, 0.8);
+    background-color: rgba(26, 30, 35, 0.7);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -339,12 +338,35 @@ ul {
 ----------------------------------------------------- */
 
 
-/* SEÇÃO RESUMO
+/* SEÇÃO ESCOLARIDADE
 ----------------------------------------------------- */
+#escolaridade .secao-title {
+    background: url(../img/bg-escolaridade.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@media (min-width: 768px) {
+    #escolaridade .secao-title {
+        background-position: 0% 70%;
+    }
+}
 
+/* SEÇÃO EXPERIÊNCIA PROFISSIONAL
+----------------------------------------------------- */
+#experiencia-profissional .secao-title {
+    background: url(../img/bg-experiencia-profissional.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* SEÇÃO PROJETOS
 ----------------------------------------------------- */
+#projetos .secao-title {
+    background: url(../img/bg-projetos.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .tabs {
     display: flex;
     justify-content: flex-start;
@@ -493,6 +515,11 @@ ul {
 
 /* SEÇÃO CONTATO
 ----------------------------------------------------- */
+#contato .secao-title {
+    background: url(../img/bg-contato.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* FOOTER
 ----------------------------------------------------- */

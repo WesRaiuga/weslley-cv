@@ -36,10 +36,6 @@ const menu = document.querySelector("#menu");
 const secao1 = document.querySelector("#sobre-mim");
 let sticky = menu.offsetTop;
 
-window.addEventListener("scroll", () => {
-  fixarMenu();
-});
-
 const fixarMenu = () => {
   if (window.pageYOffset >= sticky) {
     menu.classList.add("sticky");
@@ -49,6 +45,10 @@ const fixarMenu = () => {
     secao1.classList.remove("desgrudar");
   }
 };
+
+window.addEventListener("scroll", () => {
+  fixarMenu();
+});
 
 /* MENU MOBILE
 ----------------------------------------------------- */
@@ -65,6 +65,18 @@ menuHamburguer.onclick = () => {
 const tabLinks = document.querySelectorAll('.tab');
 const tabContents = document.querySelectorAll('.tab-content');
 
+const showContent = (show, hide1, hide2) => {
+  tabContents[show].classList.add('active');
+  tabContents[hide1].classList.remove('active');
+  tabContents[hide2].classList.remove('active');
+};
+
+const activeTab = (active, inactive1, inactive2) => {
+  tabLinks[active].classList.add('active');
+  tabLinks[inactive1].classList.remove('active');
+  tabLinks[inactive2].classList.remove('active');
+};
+
 tabLinks[0].onclick = () => {
   showContent(0, 1, 2);
   activeTab(0, 1, 2);
@@ -76,16 +88,4 @@ tabLinks[1].onclick = () => {
 tabLinks[2].onclick = () => {
   showContent(2, 1, 0);
   activeTab(2, 1, 0);
-};
-
-const showContent = (show, hide1, hide2) => {
-  tabContents[show].classList.add('active');
-  tabContents[hide1].classList.remove('active');
-  tabContents[hide2].classList.remove('active');
-};
-
-const activeTab = (active, inactive1, inactive2) => {
-  tabLinks[active].classList.add('active');
-  tabLinks[inactive1].classList.remove('active');
-  tabLinks[inactive2].classList.remove('active');
 };
