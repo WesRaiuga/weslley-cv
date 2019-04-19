@@ -1,0 +1,149 @@
+/* MENU STICKY
+----------------------------------------------------- */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+#menu {
+	z-index: 1;
+}
+
+#menu header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(26, 30, 35, 0.99);
+	position: relative;
+	width: 100%;
+	box-sizing: border-box;    
+}
+
+.titulo h2 {
+	color: #FFF;
+	margin: 10px 0;
+}
+
+.menu-hamburguer {
+	width: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	right: 10px;
+}
+
+.traco {
+	width: 100%;
+	height: 3px;
+	background-color: #FFF;
+	margin: 3.75px 0;
+	transition: 0.5s;
+}
+
+.traco-1, .traco-3 {
+	transform-origin: center right;
+}
+
+.menu-hamburguer.ativo .traco-1 {
+	transform: rotateZ(-45deg);
+}
+
+.menu-hamburguer.ativo .traco-2 {
+	opacity: 0;
+}
+
+.menu-hamburguer.ativo .traco-3 {
+	transform: rotateZ(45deg);
+}
+
+.filtros {
+	display: none;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.filtros.mobile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	left: 200%;
+	right: 0;
+	background-color: rgba(26, 30, 35, 0.99);
+	z-index: 1;
+	transition: 0.5s;
+	overflow-x: hidden;
+}
+
+.filtros.mobile a {
+	border-bottom: 1px solid rgba(51, 63, 77, 0.99);
+}
+
+.filtros.mobile.ativo {
+	left: 0;
+}
+
+.filtros a {
+	color: #FFF;
+	padding: 10px 0;
+	text-align: center;
+	width: 100vw;
+}
+
+.filtros a:active {
+	background-color: #304050;
+}
+
+.idiomas-btn ul {
+	display: flex;
+	justify-content: center;
+}
+
+.idiomas-btn ul li {
+	margin: 5px 20px;
+	cursor: pointer;
+}
+
+@media (min-width: 816px) {
+	#menu header {
+		justify-content: space-between;
+		padding: 0 100px;
+		align-items: initial;
+	}
+	
+	.menu-hamburguer {
+		display: none;
+	}
+	
+	.filtros {
+		display: flex;
+	}
+	
+	.filtros a {
+		padding: 20px;
+		width: auto;
+	}
+	
+	.filtros a:hover {
+		background-color: rgba(82, 179, 217, 0.3);
+		transition: 0.5s;
+	}
+	
+	.filtros.mobile {
+		display: none;
+	}
+
+	.idiomas-btn ul li {
+		margin: 5px 5px;
+	}
+
+	.idiomas-btn ul li img{
+		width: 20px;
+	}
+}

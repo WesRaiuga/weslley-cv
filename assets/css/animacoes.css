@@ -1,0 +1,38 @@
+/* ANIMAÇÕES 
+----------------------------------------------------- */
+@keyframes floating {
+	from { transform: translate(0,  0px); }
+	65%  { transform: translate(0, 15px); }
+	to   { transform: translate(0, -0px); }    
+}
+
+@-webkit-keyframes floating {
+	from { transform: translate(0,  0px); }
+	65%  { transform: translate(0, 15px); }
+	to   { transform: translate(0, -0px); }    
+}
+
+@keyframes fadeContent {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@-webkit-keyframes fadeContent {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes fadeIn { 
+	0% {
+		opacity: 0;
+		transform: scale(.1);
+	}
+	
+	85% {
+		opacity: 1;
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

@@ -1,0 +1,290 @@
+/* GERAL 
+----------------------------------------------------- */
+html {
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', Helvetica, sans-serif;
+	color: #282828;
+	background-color: #eaeaea;
+}
+h1, h2, h3 {
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+a {
+	text-decoration: none;
+	color: #009966;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.secao {
+	padding-top: 30px;
+	margin: 0 0 30px;
+}
+.secao-title-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	background-color: rgba(26, 30, 35, 0.7);
+	padding: 150px 0;
+}
+.secao-title-content h2 {
+	color: #FFF;
+	font-size: 30pt;
+	letter-spacing: 2px;
+	text-align: center;
+	text-shadow: 0 0 10px #000;
+}
+.secao-content {
+	padding: 20px 5vw;
+}
+.hide {
+	display: none;
+}
+@media (min-width: 768px) {
+	.secao {
+		margin: 0 0 50px;
+	}
+	.secao-title-content h2 {
+		font-size: 50pt;
+	}
+}
+
+/* SEÇÃO SOBRE MIM
+----------------------------------------------------- */
+
+
+/* SEÇÃO ESCOLARIDADE
+----------------------------------------------------- */
+#escolaridade .secao-title {
+	background: url(../img/bg-escolaridade.jpg) center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+@media (min-width: 768px) {
+	#escolaridade .secao-title {
+		background-position: 0% 70%;
+	}
+}
+
+/* SEÇÃO EXPERIÊNCIA PROFISSIONAL
+----------------------------------------------------- */
+#experiencia-profissional .secao-title {
+	background: url(../img/bg-experiencia-profissional.jpg) center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* SEÇÃO PROJETOS
+----------------------------------------------------- */
+#projetos .secao-title {
+	background: url(../img/bg-projetos.jpg) center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.tabs {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+.tab {
+	background-color: rgba(26, 30, 35, 0.99);
+	border: none;
+	border-radius: 7px 7px 0 0;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	margin-right: 1px;
+	color: #FFF;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 8pt;
+}
+
+.tab.active {
+	background: linear-gradient(#2b7b9b, rgba(26, 30, 35, 0.1) 100%);
+	color: rgba(26, 30, 35, 0.99);
+	font-size: 12pt;
+}
+
+.tab-content {
+	display: none;
+	padding: 0;
+	background-color: rgba(26, 30, 35, 0.1);
+	border-radius: 0 7px 7px 7px;
+	transition: 1s;
+	animation: fadeContent 1s;
+	padding: 3%;
+}
+
+.tab-content.active {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.tab-content.active .projeto {
+	animation: fadeIn 1s linear;
+	animation-fill-mode: both;
+}
+
+.tab-content.active .projeto:nth-child(2) {
+	animation-delay: .2s;
+}
+
+.tab-content.active .projeto:nth-child(3) {
+	animation-delay: .4s;
+}
+
+.tab-content.active .projeto:nth-child(4) {
+	animation-delay: .6s;
+}
+
+.tab-content.active .projeto:nth-child(5) {
+	animation-delay: .8s;
+}
+
+.projeto {
+	background: url(../img/banner.jpg) center;
+	background-size: 250px 200px;
+	width: 250px;
+	height: 200px;
+	margin: 10px;
+	border-radius: 10px;
+	transition: 0.8s;
+}
+
+#proj-games {
+	background-image: url(../img/projetos/games.jpg);
+}
+
+#proj-wedance {
+	background-image: url(../img/projetos/wedance.png);
+}
+
+#proj-desenhos {
+	background-image: url(../img/projetos/desenhos.png);
+}
+
+#proj-pixelart {
+	background-image: url(../img/projetos/pixel-art.png);
+}
+
+#proj-conto1 {
+	background-image: url(../img/projetos/olhe-para-o-ceu.png);
+}
+
+#proj-shield {
+	background-image: url(../img/projetos/lannister-shield.png);
+}
+
+.projeto-content {
+	height: 80%;
+	background-color: rgba(26, 30, 35, 0.8);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 10px 10px 0 0;
+	opacity: 0;
+}
+
+.projeto:hover .projeto-content {
+	opacity: 1;
+}
+
+.projeto:hover {
+	background-size: 375px 300px;
+}
+
+.projeto:hover .projeto-titulo {
+	background-color: #68c3a3;
+}
+
+.projeto-content a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.projeto-titulo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	height: 20%;
+	background-color: #2b7b9b;
+	border-radius: 0 0 10px 10px;
+	color: #FFF;
+	font-weight: bolder;
+	font-size: 12pt;
+	letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+	.tab-content.active {
+		justify-content: flex-start;
+	}
+}
+
+
+/* SEÇÃO CONTATO
+----------------------------------------------------- */
+#contato .secao-title {
+	background: url(../img/bg-contato.jpg) center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* FOOTER
+----------------------------------------------------- */
+footer {
+	background-color: #1a1e23;
+	color: #FFF;
+}
+
+footer div:first-child {
+	padding: 30px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer > div:last-child {
+	background-color: #111318;
+	display: flex;
+	justify-content: center;
+}
+
+footer > div:last-child span {
+	margin: 10px 0;
+}
+
+#footer-redes-sociais {
+	display: flex;
+	margin: 10px 0;
+}
+
+.footer-social-icon {
+	color: #FFF;
+	width: 8px;
+	height: 8px;
+	padding: 20px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
