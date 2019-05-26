@@ -16,12 +16,14 @@
 		<link rel="stylesheet" href="assets/css/animacoes.css">
 		<link rel="stylesheet" href="assets/css/banner.css">
 		<link rel="stylesheet" href="assets/css/menu-sticky.css">
-		<link rel="stylesheet" href="assets/css/timeline.css">
+		<link rel="stylesheet" href="assets/css/accordion.css">
+		<!-- <link rel="stylesheet" href="assets/css/timeline.css"> -->
 		<link rel="stylesheet" href="assets/css/estilo-geral.css">
 
 		<script src="assets/js/i18n.js" defer></script>
 		<script src="assets/js/menu-sticky.js" defer></script>
-		<script src="assets/js/script.js" defer></script>
+		<script src="assets/js/projetos.js" defer></script>
+		<script src="assets/js/accordion.js" defer></script>
 		
 		<title>Weslley Alves de Aguiar</title>
 	</head>
@@ -181,44 +183,98 @@
 			</div>
 			
 			<div class="secao-content">
-				<div class="timeline">
-					<div class="tl-content">
-						<div class="tl-info">
-							<p class="tl-year">2017 - 2018</p>
-							<p class="tl-title">
+
+				<button class="accordion">
+					<span data-lang="PT">Formação Acadêmica</span>
+					<span class="hide" data-lang="EN">Academic Education</span>
+					<i class="fas fa-angle-down"></i>
+				</button>
+				<div class="accordion-content">
+					<div>
+						<div class="title">
+							<div>
+								<img src="assets/img/escolaridade/fiap.png" alt="FIAP escrito em cor magenta">
+							</div>
+							<p>Faculdade de Informática e Administração Paulista</p>
+						</div>
+						<div class="info">
+							<p class="subtitle">
 								<span data-lang="PT">Análise e Desenvolvimento de Sistemas</span>
 								<span class="hide" data-lang="EN">Analysis and Systems Development</span>
 							</p>
-							<p class="tl-subtitle">Faculdade de Informática e Administração Paulista</p>
-						</div>
-						<img class="tl-image" src="assets/img/escolaridade/fiap.png" alt="Logo da FIAP">
-					</div>
-					<div class="tl-content-reverse">
-							<div class="tl-info">
-								<p class="tl-year">2012 - 2013</p>
-								<p class="tl-title">
-									<span data-lang="PT">Tecnologia em Jogos Digitais <small>(incompleto)</small></span>
-									<span class="hide" data-lang="EN">Technology in Game Design <small>(incomplete)</small></span>
-								</p>
-								<p class="tl-subtitle">Pontifícia Universidade Católica de São Paulo</p>
-							</div>
-							<img class="tl-image" src="assets/img/escolaridade/puc-sp.png" alt="Brasão da escola Renato Braga">
-						</div>
-					<div class="tl-content">
-						<div class="tl-info">
-							<p class="tl-year">2009 - 2011</p>
-							<p class="tl-title">
-								<span data-lang="PT">Ensino Médio</span>
-								<span class="hide" data-lang="EN">High School</span>
+							<p>
+								<span data-lang="PT">2017 - 2018 (concluído)</span>
+								<span class="hide" data-lang="EN">2017 - 2018 (completed)</span>
 							</p>
-							<p class="tl-subtitle">
+						</div>
+					</div>
+
+					<div>
+						<div class="title">
+							<div>
+								<img src="assets/img/escolaridade/puc-sp.png" alt="Brasão da PUC-SP">
+							</div>
+							<p>Pontifícia Universidade Católica de São Paulo</p>
+						</div>
+						<div class="info">
+							<p class="subtitle">
+								<span data-lang="PT">Tecnologia em Jogos Digitais</span>
+								<span class="hide" data-lang="EN">Technology in Game Design</span>
+							</p>
+							<p>
+								<span data-lang="PT">2012 - 2013 (incompleto)</span>
+								<span class="hide" data-lang="EN">2017 - 2018 (incomplete)</span>
+							</p>
+						</div>
+					</div>
+
+					<div>
+						<div class="title">
+							<div>
+								<img src="assets/img/escolaridade/renato-braga.png" alt="Brasão da escola Renato Braga">
+							</div>
+							<p>
 								<span data-lang="PT">Escola Estadual Professor Renato Braga</span>
 								<span class="hide" data-lang="EN">State School Professor Renato Braga</span>
 							</p>
 						</div>
-						<img class="tl-image" src="assets/img/escolaridade/renato-braga.png" alt="Brasão da escola Renato Braga">
+						<div class="info">
+							<p class="subtitle">
+								<span data-lang="PT">Ensino Médio</span>
+								<span class="hide" data-lang="EN">High School</span>
+							</p>
+							<p>
+								<span data-lang="PT">2009 - 2011 (concluído)</span>
+								<span class="hide" data-lang="EN">2009 - 2011 (completed)</span>
+							</p>
+						</div>
 					</div>
 				</div>
+
+				<button class="accordion">
+					<span data-lang="PT">Cursos</span>
+					<span class="hide" data-lang="EN">Courses</span>
+					<i class="fas fa-angle-down"></i>
+				</button>
+				<div class="accordion-content">
+					<p>
+						<span data-lang="PT">Em construção</span>
+						<span class="hide" data-lang="EN">Under construction</span>
+					</p>
+				</div>
+
+				<button class="accordion">
+					<span data-lang="PT">Certificados</span>
+					<span class="hide" data-lang="EN">Certificates</span>
+					<i class="fas fa-angle-down"></i>
+				</button>
+				<div class="accordion-content">
+					<p>
+						<span data-lang="PT">Em construção</span>
+						<span class="hide" data-lang="EN">Under construction</span>
+					</p>
+				</div>
+
 			</div>
 		</section>
 		<!-- ./ ESCOLARIDADE -->
@@ -235,98 +291,111 @@
 			</div>
 			
 			<div class="secao-content">
-				<div class="timeline">
-					<div class="tl-content">
-						<div class="tl-info">
-							<p class="tl-year">2019</p>
-							<p class="tl-title">
-								<span data-lang="PT">Programador Junior</span>
-								<span class="hide" data-lang="EN">Junior Programmer</span>
-							</p>
+
+				<button class="accordion">
+					<span data-lang="PT">Programador Junior</span>
+					<span class="hide" data-lang="EN">Junior Programmer</span>
+					<i class="fas fa-angle-down"></i>
+				</button>
+				<div class="accordion-content">
+					<div>
+						<div class="title">
+							<div>
+								<img src="assets/img/exp-profissional/indra.png" alt="Logotipo da Indra">
+							</div>
 							<p>
-								<span data-lang="PT">Atuando em projeto de sustentação para um sistema da Vivo. Desenvolvimento back-end com JAVA (JDBC, JSP, JSF, EJB) e banco de dados Oracle SQL.</span>
-								<span class="hide" data-lang="EN">Acting on a support project for a Vivo system. Back-end development with JAVA (JDBC, JSP, JSF, EJB) and Oracle SQL database.</span>
-							</p>
-							<p class="tl-subtitle">
 								<span data-lang="PT">Indra Brasil Soluções e Serviços Tecnológicos S/A</span>
 								<span class="hide" data-lang="EN">Indra Company | Minsait</span>
 							</p>
 						</div>
-						<img class="tl-image" src="assets/img/exp-profissional/indra.png" alt="Logo da FIAP">
-					</div>
-					<div class="tl-content-reverse">
-						<div class="tl-info">
-							<p class="tl-year">2019</p>
-							<p class="tl-title">
-								<span data-lang="PT">Desenvolvedor Junior</span>
-								<span class="hide" data-lang="EN">Junior Development</span>
+						<div class="info">
+							<p class="subtitle">2019</p>
+							<p>
+								<span data-lang="PT">Atuando em projeto de sustentação, com desenvolvimento de correções e melhorias, para um sistema jurídico. Desenvolvimento back-end com JAVA (JDBC, JSP, JSF, EJB) e banco de dados Oracle SQL.</span>
+								<span class="hide" data-lang="EN">Acting on a support project, with development of corrections and improvements, for a legal system. Back-end development with JAVA (JDBC, JSP, JSF, EJB) and Oracle SQL database.</span>
 							</p>
+						</div>
+					</div>
+				</div>
+
+				<button class="accordion">
+					<span data-lang="PT">Desenvolvedor Junior</span>
+					<span class="hide" data-lang="EN">Junior Development</span>
+					<i class="fas fa-angle-down"></i>
+				</button>
+				<div class="accordion-content">
+					<div>
+						<div class="title">
+							<div>
+								<img src="assets/img/exp-profissional/class-solutions.png" alt="Logotipo da Class Solutions">
+							</div>
+							<p>
+								<span data-lang="PT">Class Comércio e Sistemas de Informática Ltda.</span>
+								<span class="hide" data-lang="EN">Class Solutions</span>
+							</p>
+						</div>
+						<div class="info">
+							<p class="subtitle">2019</p>
 							<p>
 								<span data-lang="PT">Suporte e desenvolvimento front-end com HTML, CSS e JS (AngularJS) voltado a Sharepoint. Desenvolvimento de fluxos de trabalho automatizados e integrações entre aplicativos e serviços, com Microsoft Flow.</span>
 								<span class="hide" data-lang="EN">Support and front-end development with HTML, CSS and JS (AngularJS) aimed at Sharepoint. Developing automated workflows and integrations between applications and services with Microsoft Flow.</span>
 							</p>
-							<p class="tl-subtitle">
+						</div>
+					</div>
+				</div>
+
+				<button class="accordion">
+					<span data-lang="PT">Estagiário de Desenvolvimento</span>
+					<span class="hide" data-lang="EN">Development Trainee</span>
+					<i class="fas fa-angle-down"></i>
+				</button>
+				<div class="accordion-content">
+					<div>
+						<div class="title">
+							<div>
+								<img src="assets/img/exp-profissional/class-solutions.png" alt="Logotipo da Class Solutions">
+							</div>
+							<p>
 								<span data-lang="PT">Class Comércio e Sistemas de Informática Ltda.</span>
 								<span class="hide" data-lang="EN">Class Solutions</span>
 							</p>
 						</div>
-						<img class="tl-image" src="assets/img/exp-profissional/class-solutions.png" alt="Logo da FIAP">
-					</div>
-					<div class="tl-content">
-						<div class="tl-info">
-							<p class="tl-year">2017 - 2019</p>
-							<p class="tl-title">
-								<span data-lang="PT">Estagiário de Desenvolvimento</span>
-								<span class="hide" data-lang="EN">Development Trainee</span>
-							</p>
+						<div class="info">
+							<p class="subtitle">2017 - 2019</p>
 							<p>
 								<span data-lang="PT">Desenvolvimento <em>Low-code/No-code</em>, através das ferramentas do Microsoft Office 365, com foco em Sharepoint e Microsoft Flow. Desenvolvimento front-end com HTML, CSS e JS (AngularJS), voltado a Sharepoint.</span>
 								<span class="hide" data-lang="EN">Low-code/No-code development, using Microsoft Office 365 tools, focused on Sharepoint and Microsoft Flow. Front-end development with HTML, CSS and JS, aimed at Sharepoint.</span>
 							</p>
-							<p class="tl-subtitle">
-								<span data-lang="PT">Class Comércio e Sistemas de Informática Ltda.</span>
-								<span class="hide" data-lang="EN">Class Solutions</span>
-							</p>
 						</div>
-						<img class="tl-image" src="assets/img/exp-profissional/class-solutions.png" alt="Logo da FIAP">
 					</div>
-					<div class="tl-content-reverse">
-						<div class="tl-info">
-							<p class="tl-year">2015 - 2016</p>
-							<p class="tl-title">
-								<span data-lang="PT">Especialista de Atendimento ao Cliente</span>
-								<span class="hide" data-lang="EN">Customer Service Specialist</span>
-							</p>
+				</div>
+
+				<button class="accordion">
+					<span data-lang="PT">Especialista de Atendimento ao Cliente</span>
+					<span class="hide" data-lang="EN">Customer Service Specialist</span>
+					<i class="fas fa-angle-down"></i>
+				</button>
+				<div class="accordion-content">
+					<div>
+						<div class="title">
+							<div>
+								<img src="assets/img/exp-profissional/teletech.png" alt="Logotipo da TeleTech">
+							</div>
 							<p>
-								<span data-lang="PT">Atendimento ao cliente final da Netflix, via telefone e bate-papo online, para resolução de problemas relacionados à Netflix, como assinatura do serviço, conexão com a plataforma, configurações dos aparelhos compatíveis e dúvidas gerais.</span>
-								<span class="hide" data-lang="EN">Netflix end-user customer support, via phone and online chat, for troubleshooting Netflix-related issues such as service subscription, platform connection, compatible device configurations, and general questions.</span>
-							</p>
-							<p class="tl-subtitle">
 								<span data-lang="PT">TeleTech Brasil Serviços Ltda.</span>
 								<span class="hide" data-lang="EN">TeleTech Brasil</span>
 							</p>
 						</div>
-						<img class="tl-image" src="assets/img/exp-profissional/teletech.png" alt="Logo da FIAP">
-					</div>
-					<div class="tl-content">
-						<div class="tl-info">
-							<p class="tl-year">2013 - 2014</p>
-							<p class="tl-title">
-								<span data-lang="PT">Atendente Junior</span>
-								<span class="hide" data-lang="EN">Junior Attendant</span>
-							</p>
+						<div class="info">
+							<p class="subtitle">2017 - 2019</p>
 							<p>
-								<span data-lang="PT">Suporte ao cliente final da Asus, via telefone e e-mail, para resolução de problemas de software em notebooks e netbooks Asus; e auxílio no envio dos aparelhos à assistência técnica, desde a criação da ordem de serviço até retorno do produto.</span>
-								<span class="hide" data-lang="EN">Asus end-user customer support, via phone and email, for troubleshooting software problems on Asus notebooks and netbooks; and assistance in sending the devices to the technical assistance, from the creation of the service order to the return of the product.</span>
-							</p>
-							<p class="tl-subtitle">
-								<span data-lang="PT">ContactNet Telecomunicações Ltda.</span>
-								<span class="hide" data-lang="EN">ContactNet Telecommunications</span>
+								<span data-lang="PT">Atendimento ao cliente final da Netflix, via telefone e bate-papo online, para resolução de problemas relacionados à Netflix, como assinatura do serviço, conexão com a plataforma, configurações dos aparelhos compatíveis e dúvidas gerais.</span>
+								<span class="hide" data-lang="EN">Netflix end-user customer support, via phone and online chat, for troubleshooting Netflix-related issues such as service subscription, platform connection, compatible device configurations, and general questions.</span>
 							</p>
 						</div>
-						<img class="tl-image" src="assets/img/exp-profissional/contactnet.png" alt="Logo da FIAP">
 					</div>
 				</div>
+
 			</div>
 		</section>
 		<!-- ./ EXPERIÊNCIA PROFISSIONAL -->

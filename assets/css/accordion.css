@@ -1,0 +1,102 @@
+/* ESCOLARIDADE E EXPERIÊNCIA PROFISSIONAL
+----------------------------------------------------- */
+.accordion {
+  background-color: #FFF;
+  color: #1a1e23fc;
+  cursor: pointer;
+  padding: 18px 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16pt;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.7s;
+}
+
+.accordion.active {
+  /* color: #52b3d3; */
+  letter-spacing: 2px;
+}
+
+.accordion i{
+  transition: 0.7s;
+  color: #1a1e23fc;
+}
+
+.accordion.active i{
+  transform: rotateX(-180deg);
+  /* color: #52b3d9; */
+}
+
+.accordion-content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  text-align: left;
+}
+
+.accordion-content > div {
+  margin: 10px 0;
+  /* border-bottom: 2px solid #52b3d9; */
+}
+
+.accordion-content .title {
+  color: #52b3d9;
+}
+
+.accordion-content .title img {
+  max-width: 100px;
+  max-height: 60px;
+}
+
+.info .subtitle {
+  font-weight: bolder;
+}
+
+
+@media (min-width: 980px) {
+  .accordion {
+    display: initial;
+  }
+
+  .accordion:hover {
+    background-color: rgba(82, 179, 217, 0.15);
+  }
+
+  .accordion i{
+    margin-left: 10px;
+  }
+
+  .accordion.active {
+    letter-spacing: 3px;
+  }
+
+  .accordion.active i {
+    margin-left: 14px;
+  }
+
+  .accordion-content {
+    padding: 0 36px;
+  }
+
+  .accordion-content .title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .accordion-content .title > div {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .accordion-content .title p {
+    margin-left: 10px;
+  }
+}
